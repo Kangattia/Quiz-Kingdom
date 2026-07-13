@@ -2,6 +2,8 @@ const selectedText = document.getElementById("selectedText");
 const playBtn = document.getElementById("playBtn");
 const historyBtn = document.getElementById("historyBtn");
 const bibleBtn = document.getElementById("bibleBtn");
+const scienceBtn = document.getElementById("scienceBtn");
+const geographyBtn = document.getElementById("geographyBtn");
 const homeScreen = document.getElementById("homeScreen");
 const quizScreen = document.getElementById("quizScreen");
 
@@ -44,6 +46,40 @@ bibleBtn.addEventListener("click", function () {
 selectedText.textContent = "Selected: ✝️ Bible";
     bibleBtn.classList.add("selected");
     historyBtn.classList.remove("selected");
+
+});
+scienceBtn.addEventListener("click", function () {
+
+    selectedCategory = "Science";
+    questions = questionBank[selectedCategory];
+
+    currentQuestion = 0;
+    score = 0;
+
+    selectedText.textContent = "Selected: 🔬 Science";
+
+    scienceBtn.classList.add("selected");
+    historyBtn.classList.remove("selected");
+    bibleBtn.classList.remove("selected");
+    geographyBtn.classList.remove("selected");
+
+});
+
+
+geographyBtn.addEventListener("click", function () {
+
+    selectedCategory = "Geography";
+    questions = questionBank[selectedCategory];
+
+    currentQuestion = 0;
+    score = 0;
+
+    selectedText.textContent = "Selected: 🌍 Geography";
+
+    geographyBtn.classList.add("selected");
+    historyBtn.classList.remove("selected");
+    bibleBtn.classList.remove("selected");
+    scienceBtn.classList.remove("selected");
 
 });
 playBtn.addEventListener("click", function () {
