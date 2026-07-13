@@ -9,3 +9,9 @@ const wrongSound = new Audio(
 const clickSound = new Audio(
 "https://actions.google.com/sounds/v1/buttons/button_click.ogg"
 );
+const backgroundMusic = new Audio(
+"https://actions.google.com/sounds/v1/ambiences/arcade_room.ogg"
+);
+
+backgroundMusic.loop = true;
+backgroundMusic.volume = 0.3;
