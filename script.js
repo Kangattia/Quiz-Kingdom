@@ -24,11 +24,19 @@ let playerProfile = {
 
     totalPoints: 0,
 
+    title: "🌱 Kingdom Recruit",
+
     levelsCompleted: 0,
 
     perfectLevels: 0,
 
-    questionsMastered: 0
+    questionsMastered: 0,
+
+    highestScore: 0,
+
+    firstPlayed: "",
+
+    lastPlayed: ""
 
 };
 let questionPointsEarned = 0;
