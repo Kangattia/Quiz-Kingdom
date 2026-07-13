@@ -92,7 +92,15 @@ clickSound.play();
     showQuestion();
 
 });
+backBtn.addEventListener("click", function () {
 
+    quizScreen.style.display = "none";
+    homeScreen.style.display = "block";
+
+    currentQuestion = 0;
+    score = 0;
+
+});
 
 function showQuestion() {
 
