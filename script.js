@@ -106,10 +106,19 @@ function shuffleQuestions() {
     questions.sort(() => Math.random() - 0.5);
 
 }
+function shuffleAnswers(question) {
+
+    let correctAnswer = question.answers[question.correct];
+
+    question.answers.sort(() => Math.random() - 0.5);
+
+    question.correct = question.answers.indexOf(correctAnswer);
+
+}
 function showQuestion() {
 
     let question = questions[currentQuestion];
-
+shuffleAnswers(question);
     categoryTitle.textContent = question.category;
 
     questionText.textContent = question.question;
