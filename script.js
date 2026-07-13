@@ -132,6 +132,55 @@ function shuffleAnswers(question) {
 
     question.correct = question.answers.indexOf(correctAnswer);
 }
+function getRoyalTitle(points) {
+
+    if (points >= 5000000) {
+        return "🌟 Emperor of Knowledge";
+    } 
+    else if (points >= 2500000) {
+        return "👑 High King";
+    } 
+    else if (points >= 1200000) {
+        return "👑 Kingdom King";
+    } 
+    else if (points >= 600000) {
+        return "🏰 Grand Duke";
+    } 
+    else if (points >= 300000) {
+        return "👑 Royal Commander";
+    } 
+    else if (points >= 150000) {
+        return "🦁 Kingdom General";
+    } 
+    else if (points >= 80000) {
+        return "🏰 Royal Warden";
+    } 
+    else if (points >= 40000) {
+        return "⚔️ Knight Commander";
+    } 
+    else if (points >= 20000) {
+        return "🛡️ Knight of the Realm";
+    } 
+    else if (points >= 9000) {
+        return "⚔️ Royal Swordsman";
+    } 
+    else if (points >= 4000) {
+        return "🏹 Elite Archer";
+    } 
+    else if (points >= 1500) {
+        return "⚔️ Veteran Warrior";
+    } 
+    else if (points >= 500) {
+        return "🛡️ Kingdom Guard";
+    } 
+    else if (points >= 100) {
+        return "🗡️ Royal Footman";
+    } 
+    else {
+        return "🌱 Kingdom Recruit";
+    }
+
+}
 function startTimer() {
 
     clearInterval(timer);
