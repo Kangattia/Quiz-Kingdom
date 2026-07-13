@@ -77,7 +77,10 @@ function nextQuestion() {
 
     } else {
 
-        alert("Quiz completed! 👑 Your score is " + score);
+    quizScreen.style.display = "none";
+    resultScreen.style.display = "block";
+
+    finalScore.textContent = "Your Score: " + score + "/" + questions.length;
 
     }
 
