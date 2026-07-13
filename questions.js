@@ -374,6 +374,6 @@ answers: [
 correct: 2
 }
 
-],
+]
 
 };
