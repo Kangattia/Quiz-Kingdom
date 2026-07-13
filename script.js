@@ -84,7 +84,7 @@ function nextQuestion() {
         showQuestion();
 
     } else {
-
+victorySound.play();
     quizScreen.style.display = "none";
     resultScreen.style.display = "block";
 
