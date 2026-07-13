@@ -34,3 +34,20 @@ function showQuestion() {
     answerButtons[3].textContent = question.answers[3];
 
 }
+answerButtons.forEach((button, index) => {
+
+    button.addEventListener("click", function () {
+
+        let question = questions[currentQuestion];
+
+        if (index === question.correct) {
+            button.textContent = "✅ " + button.textContent;
+            alert("Correct! 👑");
+        } else {
+            button.textContent = "❌ " + button.textContent;
+            alert("Wrong answer!");
+        }
+
+    });
+
+});
