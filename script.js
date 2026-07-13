@@ -1,5 +1,6 @@
 const selectedText = document.getElementById("selectedText");
 const playBtn = document.getElementById("playBtn");
+const backBtn = document.getElementById("backBtn");
 const historyBtn = document.getElementById("historyBtn");
 const bibleBtn = document.getElementById("bibleBtn");
 const scienceBtn = document.getElementById("scienceBtn");
