@@ -228,6 +228,21 @@ function savePlayerProfile() {
     );
 
 }
+function loadPlayerProfile() {
+
+    let savedProfile = localStorage.getItem("quizKingdomProfile");
+
+    if (savedProfile) {
+
+        playerProfile = JSON.parse(savedProfile);
+
+        playerNameInput.value = playerProfile.username;
+
+        updatePlayerCard();
+
+    }
+
+}
 function startTimer() {
 
     clearInterval(timer);
