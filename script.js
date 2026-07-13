@@ -54,6 +54,8 @@ answerButtons.forEach((button, index) => {
 
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
+            correctSound.play();
+navigator.vibrate(100);
     setTimeout(() => {
     nextQuestion();
 }, 800);
@@ -61,6 +63,8 @@ button.classList.add("correct");
         } else {
             button.textContent = "❌ " + button.textContent;
             button.classList.add("wrong");
+            wrongSound.play();
+navigator.vibrate(200);
             setTimeout(() => {
     nextQuestion();
 }, 800);
