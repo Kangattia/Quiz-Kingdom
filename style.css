@@ -159,3 +159,18 @@ button:disabled {
     transform: scale(1.05);
     box-shadow: 0 0 15px gold;
 }
+#questionText {
+    color: #d4af37;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.answerBtn {
+    background: #1e3a8a;
+    color: white;
+    border: 2px solid #d4af37;
+}
+
+.answerBtn:hover {
+    background: #2563eb;
+}
