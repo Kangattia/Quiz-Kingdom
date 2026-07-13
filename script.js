@@ -116,8 +116,32 @@ function shuffleAnswers(question) {
     question.answers.sort(() => Math.random() - 0.5);
 
     question.correct = question.answers.indexOf(correctAnswer);
+}
+function startTimer() {
+
+    clearInterval(timer);
+
+    timeLeft = 15;
+    timerText.textContent = "⏱️ Time: " + timeLeft;
+
+    timer = setInterval(function () {
+
+        timeLeft--;
+
+        timerText.textContent = "⏱️ Time: " + timeLeft;
+
+        if (timeLeft <= 0) {
+
+            clearInterval(timer);
+
+            nextQuestion();
+
+        }
+
+    }, 1000);
 
 }
+
 function showQuestion() {
 
     let question = questions[currentQuestion];
