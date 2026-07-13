@@ -1,4 +1,6 @@
 const playBtn = document.getElementById("playBtn");
+const historyBtn = document.getElementById("historyBtn");
+const bibleBtn = document.getElementById("bibleBtn");
 const homeScreen = document.getElementById("homeScreen");
 const quizScreen = document.getElementById("quizScreen");
 
