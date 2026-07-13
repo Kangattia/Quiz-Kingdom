@@ -41,7 +41,7 @@ bibleBtn.addEventListener("click", function () {
 
     selectedCategory = "Bible";
     questions = questionBank[selectedCategory];
-
+shuffleQuestions();
     currentQuestion = 0;
     score = 0;
 selectedText.textContent = "Selected: ✝️ Bible";
@@ -53,7 +53,7 @@ scienceBtn.addEventListener("click", function () {
 
     selectedCategory = "Science";
     questions = questionBank[selectedCategory];
-
+shuffleQuestions();
     currentQuestion = 0;
     score = 0;
 
@@ -71,7 +71,7 @@ geographyBtn.addEventListener("click", function () {
 
     selectedCategory = "Geography";
     questions = questionBank[selectedCategory];
-
+shuffleQuestions();
     currentQuestion = 0;
     score = 0;
 
