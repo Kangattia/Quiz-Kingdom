@@ -128,3 +128,29 @@ button:disabled {
     }
 
 }
+#confetti {
+    position: relative;
+    height: 80px;
+    overflow: hidden;
+}
+
+#confetti::before {
+    content: "🎉 ✨ 🎊 ⭐ 🎉 ✨ 🎊 ⭐";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    animation: fall 2s infinite linear;
+}
+
+@keyframes fall {
+
+    from {
+        transform: translateY(-40px);
+    }
+
+    to {
+        transform: translateY(80px);
+    }
+
+}
