@@ -126,6 +126,126 @@ correct: 0
 
 Bible: [
 
+{
+category: "Bible",
+question: "Who built the ark according to the Bible?",
+answers: [
+"Noah",
+"Moses",
+"Abraham",
+"David"
+],
+correct: 0
+},
+
+{
+category: "Bible",
+question: "Who was the first man created by God?",
+answers: [
+"Adam",
+"Cain",
+"Abel",
+"Isaac"
+],
+correct: 0
+},
+
+{
+category: "Bible",
+question: "Who led the Israelites out of Egypt?",
+answers: [
+"Joseph",
+"Moses",
+"Joshua",
+"Samuel"
+],
+correct: 1
+},
+
+{
+category: "Bible",
+question: "How many disciples did Jesus have?",
+answers: [
+"10",
+"12",
+"7",
+"40"
+],
+correct: 1
+},
+
+{
+category: "Bible",
+question: "Who defeated Goliath?",
+answers: [
+"Saul",
+"David",
+"Solomon",
+"Peter"
+],
+correct: 1
+},
+
+{
+category: "Bible",
+question: "Where was Jesus born?",
+answers: [
+"Jerusalem",
+"Bethlehem",
+"Nazareth",
+"Rome"
+],
+correct: 1
+},
+
+{
+category: "Bible",
+question: "Who betrayed Jesus?",
+answers: [
+"Peter",
+"John",
+"Judas Iscariot",
+"Thomas"
+],
+correct: 2
+},
+
+{
+category: "Bible",
+question: "What is the first book of the Bible?",
+answers: [
+"Genesis",
+"Exodus",
+"Matthew",
+"Psalms"
+],
+correct: 0
+},
+
+{
+category: "Bible",
+question: "Who was swallowed by a great fish?",
+answers: [
+"Jonah",
+"Paul",
+"Elijah",
+"Daniel"
+],
+correct: 0
+},
+
+{
+category: "Bible",
+question: "Who received the Ten Commandments from God?",
+answers: [
+"Moses",
+"David",
+"Abraham",
+"Solomon"
+],
+correct: 0
+}
+
 ]
 
 };
