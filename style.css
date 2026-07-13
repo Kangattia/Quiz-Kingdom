@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0b3d91, #1e90ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: white;
+    border-radius: 20px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+h1 {
+    color: #d4af37;
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.03);
+}
+
+#historyBtn {
+    background: #2196f3;
+    color: white;
+}
+
+#bibleBtn {
+    background: #7b1fa2;
+    color: white;
+}
+
+#playBtn {
+    background: #d4af37;
+    color: black;
+    font-weight: bold;
+}
+
+button:disabled {
+    background: #cccccc;
+    color: #666666;
+}
+
+.version {
+    margin-top: 25px;
+    color: gray;
+    font-size: 14px;
+}
