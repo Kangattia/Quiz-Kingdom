@@ -17,6 +17,7 @@ const finalScore = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
 playBtn.addEventListener("click", function () {
 clickSound.play();
+    backgroundMusic.play();
     homeScreen.style.display = "none";
     quizScreen.style.display = "block";
 
