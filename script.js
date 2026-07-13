@@ -89,7 +89,25 @@ function nextQuestion() {
     resultScreen.style.display = "block";
 
     finalScore.textContent = "Your Score: " + score + "/" + questions.length;
+const resultMessage = document.getElementById("resultMessage");
 
+if (score === questions.length) {
+
+    resultMessage.textContent = "👑 Legendary! You are a true Knowledge King!";
+
+} else if (score >= 7) {
+
+    resultMessage.textContent = "🌟 Excellent! Your kingdom celebrates your wisdom!";
+
+} else if (score >= 5) {
+
+    resultMessage.textContent = "👍 Good effort! Keep improving!";
+
+} else {
+
+    resultMessage.textContent = "📚 Keep learning. Great minds grow every day!";
+
+}
     }
 
 }
