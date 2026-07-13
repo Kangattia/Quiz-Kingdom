@@ -12,6 +12,8 @@ let score = 0;
 
 const scoreText = document.getElementById("scoreText");
 const questionCounter = document.getElementById("questionCounter");
+const resultScreen = document.getElementById("resultScreen");
+const finalScore = document.getElementById("finalScore");
 playBtn.addEventListener("click", function () {
 
     homeScreen.style.display = "none";
