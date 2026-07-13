@@ -22,7 +22,8 @@ historyBtn.addEventListener("click", function () {
 
     selectedCategory = "History";
     questions = questionBank[selectedCategory];
-
+currentQuestion = 0;
+score = 0;
     alert("🌍 History selected!");
 
 });
@@ -33,7 +34,8 @@ bibleBtn.addEventListener("click", function () {
 
     selectedCategory = "Bible";
     questions = questionBank[selectedCategory];
-
+currentQuestion = 0;
+score = 0;
     alert("✝️ Bible selected!");
 
 });
