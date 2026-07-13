@@ -129,10 +129,16 @@ if (playerName === "") {
 playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
+
+alert(
+"👤 " + playerProfile.username +
+"\n👑 " + playerProfile.title
+);
+
 clickSound.play();
-    backgroundMusic.play();
-    homeScreen.style.display = "none";
-    quizScreen.style.display = "block";
+backgroundMusic.play();
+homeScreen.style.display = "none";
+quizScreen.style.display = "block";
 
     showQuestion();
 
