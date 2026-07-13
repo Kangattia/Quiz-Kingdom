@@ -86,3 +86,16 @@ function nextQuestion() {
     }
 
 }
+restartBtn.addEventListener("click", function () {
+
+    currentQuestion = 0;
+    score = 0;
+
+    scoreText.textContent = "Score: 0";
+
+    resultScreen.style.display = "none";
+    quizScreen.style.display = "block";
+
+    showQuestion();
+
+});
