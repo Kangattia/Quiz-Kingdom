@@ -15,6 +15,8 @@ const answerButtons = document.querySelectorAll(".answerBtn");
 
 let currentQuestion = 0;
 let score = 0;
+let timeLeft = 15;
+let timer;
 let selectedCategory = "History";
 let questions = questionBank[selectedCategory];
 const scoreText = document.getElementById("scoreText");
