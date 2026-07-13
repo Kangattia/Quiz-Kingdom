@@ -375,3 +375,4 @@ restartBtn.addEventListener("click", function () {
     showQuestion();
 
 });
+loadPlayerProfile();
