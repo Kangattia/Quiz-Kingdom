@@ -246,6 +246,74 @@ answers: [
 correct: 0
 }
 
+],
+
+Science: [
+
+{
+category: "Science",
+question: "What planet is known as the Red Planet?",
+answers: [
+"Mars",
+"Earth",
+"Jupiter",
+"Venus"
+],
+correct: 0
+},
+
+{
+category: "Science",
+question: "What gas do humans need to breathe to survive?",
+answers: [
+"Carbon dioxide",
+"Oxygen",
+"Hydrogen",
+"Nitrogen"
+],
+correct: 1
+},
+
+{
+category: "Science",
+question: "What is the largest organ in the human body?",
+answers: [
+"Heart",
+"Brain",
+"Skin",
+"Liver"
+],
+correct: 2
+},
+
+{
+category: "Science",
+question: "How many legs does an insect have?",
+answers: [
+"4",
+"6",
+"8",
+"10"
+],
+correct: 1
+},
+
+{
+category: "Science",
+question: "What force keeps us on the ground?",
+answers: [
+"Magnetism",
+"Gravity",
+"Electricity",
+"Friction"
+],
+correct: 1
+}
+
+],
+
+Geography: [
+
 ]
 
 };
