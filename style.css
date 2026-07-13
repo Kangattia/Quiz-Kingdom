@@ -72,3 +72,42 @@ button:disabled {
     color: gray;
     font-size: 14px;
 }
+.correct {
+    animation: correctFlash 0.5s;
+}
+
+.wrong {
+    animation: wrongFlash 0.5s;
+}
+
+@keyframes correctFlash {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wrongFlash {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
