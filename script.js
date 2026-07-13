@@ -1,3 +1,4 @@
+const selectedText = document.getElementById("selectedText");
 const playBtn = document.getElementById("playBtn");
 const historyBtn = document.getElementById("historyBtn");
 const bibleBtn = document.getElementById("bibleBtn");
@@ -25,7 +26,7 @@ historyBtn.addEventListener("click", function () {
 
     currentQuestion = 0;
     score = 0;
-
+selectedText.textContent = "Selected: 🌍 History";
     historyBtn.classList.add("selected");
     bibleBtn.classList.remove("selected");
 
@@ -40,7 +41,7 @@ bibleBtn.addEventListener("click", function () {
 
     currentQuestion = 0;
     score = 0;
-
+selectedText.textContent = "Selected: ✝️ Bible";
     bibleBtn.classList.add("selected");
     historyBtn.classList.remove("selected");
 
