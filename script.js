@@ -53,7 +53,7 @@ answerButtons.forEach((button, index) => {
     scoreText.textContent = "Score: " + score;
 
     button.textContent = "✅ " + button.textContent;
-
+button.classList.add("correct");
     alert("Correct! 👑");
 
 nextQuestion();
