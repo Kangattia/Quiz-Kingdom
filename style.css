@@ -198,3 +198,17 @@ button:disabled {
     font-weight: bold;
     border: 2px solid #2196f3;
 }
+#quizScreen {
+    border: 4px solid #d4af37;
+    background: linear-gradient(to bottom, #fff8dc, #ffffff);
+    box-shadow: 0 0 25px gold;
+}
+
+#questionText {
+    background: white;
+    border: 3px solid #d4af37;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
