@@ -111,3 +111,20 @@ button:disabled {
         transform: translateX(0);
     }
 }
+#reward {
+    font-size: 80px;
+    text-align: center;
+    animation: crownPop 1s ease infinite alternate;
+}
+
+@keyframes crownPop {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+
+}
