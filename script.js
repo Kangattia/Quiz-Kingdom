@@ -116,7 +116,7 @@ shuffleQuestions();
 });
 playBtn.addEventListener("click", function () {
     playerName = playerNameInput.value.trim();
-alert(playerName);
+
 if (playerName === "") {
 
     alert("👑 Enter your kingdom name to continue!");
@@ -130,10 +130,6 @@ playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
 
-alert(
-"👤 " + playerProfile.username +
-"\n👑 " + playerProfile.title
-);
 
 clickSound.play();
 backgroundMusic.play();
