@@ -11,7 +11,7 @@ let currentQuestion = 0;
 let score = 0;
 
 const scoreText = document.getElementById("scoreText");
-
+const questionCounter = document.getElementById("questionCounter");
 playBtn.addEventListener("click", function () {
 
     homeScreen.style.display = "none";
@@ -29,7 +29,8 @@ function showQuestion() {
     categoryTitle.textContent = question.category;
 
     questionText.textContent = question.question;
-
+questionCounter.textContent = 
+"Question " + (currentQuestion + 1) + " of " + questions.length;
     answerButtons[0].textContent = question.answers[0];
     answerButtons[1].textContent = question.answers[1];
     answerButtons[2].textContent = question.answers[2];
