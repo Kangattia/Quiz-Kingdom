@@ -52,7 +52,6 @@ answerButtons.forEach((button, index) => {
 
     alert("Correct! 👑");
 
-        }
         } else {
             button.textContent = "❌ " + button.textContent;
             alert("Wrong answer!");
