@@ -21,6 +21,7 @@ let selectedCategory = "History";
 let questions = questionBank[selectedCategory];
 const scoreText = document.getElementById("scoreText");
 const questionCounter = document.getElementById("questionCounter");
+const timerText = document.getElementById("timerText");
 const resultScreen = document.getElementById("resultScreen");
 const finalScore = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
