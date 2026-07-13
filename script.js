@@ -58,8 +58,6 @@ button.classList.add("correct");
     nextQuestion();
 }, 800);
 
-nextQuestion();
-
         } else {
             button.textContent = "❌ " + button.textContent;
             button.classList.add("wrong");
