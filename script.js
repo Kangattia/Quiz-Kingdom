@@ -234,6 +234,13 @@ clickSound.play();
     score++;
 
     scoreText.textContent = "Score: " + score;
+            totalPoints += 10;
+
+if (timeLeft > 10) {
+
+    totalPoints += 5;
+
+}
 
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
