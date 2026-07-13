@@ -20,20 +20,7 @@ const questions = [
       "Persians"
     ],
     correct: 1
-  }
-];
-  {
-    category: "History",
-    question: "Which ancient civilization built the pyramids of Giza?",
-    answers: [
-      "Romans",
-      "Egyptians",
-      "Greeks",
-      "Persians"
-    ],
-    correct: 1
   },
-
   {
     category: "History",
     question: "Who was the first emperor of Rome?",
@@ -45,7 +32,6 @@ const questions = [
     ],
     correct: 1
   },
-
   {
     category: "History",
     question: "Which country gifted the Statue of Liberty to the United States?",
@@ -57,10 +43,9 @@ const questions = [
     ],
     correct: 0
   },
-
   {
     category: "History",
-    question: "Who led India’s independence movement through nonviolent resistance?",
+    question: "Who led India's independence movement through nonviolent resistance?",
     answers: [
       "Nelson Mandela",
       "Mahatma Gandhi",
@@ -69,7 +54,6 @@ const questions = [
     ],
     correct: 1
   },
-
   {
     category: "History",
     question: "The Great Wall is located in which country?",
@@ -81,7 +65,6 @@ const questions = [
     ],
     correct: 1
   },
-
   {
     category: "History",
     question: "Who was the first President of the United States?",
@@ -93,7 +76,6 @@ const questions = [
     ],
     correct: 1
   },
-
   {
     category: "History",
     question: "Which empire was ruled by Mansa Musa?",
@@ -105,7 +87,6 @@ const questions = [
     ],
     correct: 1
   },
-
   {
     category: "History",
     question: "In which year did World War II end?",
@@ -114,6 +95,17 @@ const questions = [
       "1939",
       "1950",
       "1918"
+    ],
+    correct: 0
+  },
+  {
+    category: "History",
+    question: "Who was known as the founder of the Mongol Empire?",
+    answers: [
+      "Genghis Khan",
+      "Alexander the Great",
+      "Julius Caesar",
+      "Napoleon"
     ],
     correct: 0
   }
