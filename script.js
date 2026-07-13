@@ -18,8 +18,19 @@ let currentQuestion = 0;
 let score = 0;
 let timeLeft = 15;
 let timer;
-let playerName = "";
-let totalPoints = 0;
+let playerProfile = {
+
+    username: "",
+
+    totalPoints: 0,
+
+    levelsCompleted: 0,
+
+    perfectLevels: 0,
+
+    questionsMastered: 0
+
+};
 let questionPointsEarned = 0;
 let levelBonusEarned = false;
 let streakBonusEarned = false;
