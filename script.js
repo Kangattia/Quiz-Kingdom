@@ -43,8 +43,16 @@ answerButtons.forEach((button, index) => {
         let question = questions[currentQuestion];
 
         if (index === question.correct) {
-            button.textContent = "✅ " + button.textContent;
-            alert("Correct! 👑");
+
+    score++;
+
+    scoreText.textContent = "Score: " + score;
+
+    button.textContent = "✅ " + button.textContent;
+
+    alert("Correct! 👑");
+
+        }
         } else {
             button.textContent = "❌ " + button.textContent;
             alert("Wrong answer!");
