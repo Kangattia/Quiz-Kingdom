@@ -54,14 +54,18 @@ answerButtons.forEach((button, index) => {
 
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
-    alert("Correct! 👑");
+    setTimeout(() => {
+    nextQuestion();
+}, 800);
 
 nextQuestion();
 
         } else {
             button.textContent = "❌ " + button.textContent;
             button.classList.add("wrong");
-            alert("Wrong answer!");
+            setTimeout(() => {
+    nextQuestion();
+}, 800);
 
 nextQuestion();
         }
