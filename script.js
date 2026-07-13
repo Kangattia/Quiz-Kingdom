@@ -161,6 +161,7 @@ questionCounter.textContent =
 answerButtons.forEach((button, index) => {
 
     button.addEventListener("click", function () {
+        clearInterval(timer);
 clickSound.play();
         let question = questions[currentQuestion];
 
