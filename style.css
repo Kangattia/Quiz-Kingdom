@@ -174,3 +174,27 @@ button:disabled {
 .answerBtn:hover {
     background: #2563eb;
 }
+#backBtn {
+    background: #555;
+    color: white;
+    font-size: 15px;
+    border: 2px solid gold;
+}
+
+#scoreText {
+    background: #fff3cd;
+    color: #8a6500;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid gold;
+}
+
+#questionCounter {
+    background: #e3f2fd;
+    color: #0b3d91;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    border: 2px solid #2196f3;
+}
