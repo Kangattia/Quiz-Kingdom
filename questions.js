@@ -314,6 +314,66 @@ correct: 1
 
 Geography: [
 
-]
+{
+category: "Geography",
+question: "What is the largest continent in the world?",
+answers: [
+"Africa",
+"Asia",
+"Europe",
+"America"
+],
+correct: 1
+},
+
+{
+category: "Geography",
+question: "What is the capital city of France?",
+answers: [
+"London",
+"Berlin",
+"Paris",
+"Madrid"
+],
+correct: 2
+},
+
+{
+category: "Geography",
+question: "Which ocean is the largest in the world?",
+answers: [
+"Atlantic Ocean",
+"Indian Ocean",
+"Pacific Ocean",
+"Arctic Ocean"
+],
+correct: 2
+},
+
+{
+category: "Geography",
+question: "Which country has the largest population in Africa?",
+answers: [
+"Nigeria",
+"Egypt",
+"South Africa",
+"Kenya"
+],
+correct: 0
+},
+
+{
+category: "Geography",
+question: "Mount Everest is located in which mountain range?",
+answers: [
+"Rocky Mountains",
+"Alps",
+"Himalayas",
+"Andes"
+],
+correct: 2
+}
+
+],
 
 };
