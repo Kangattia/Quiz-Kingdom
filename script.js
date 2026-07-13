@@ -22,9 +22,12 @@ historyBtn.addEventListener("click", function () {
 
     selectedCategory = "History";
     questions = questionBank[selectedCategory];
-currentQuestion = 0;
-score = 0;
-    alert("🌍 History selected!");
+
+    currentQuestion = 0;
+    score = 0;
+
+    historyBtn.classList.add("selected");
+    bibleBtn.classList.remove("selected");
 
 });
 
@@ -34,9 +37,12 @@ bibleBtn.addEventListener("click", function () {
 
     selectedCategory = "Bible";
     questions = questionBank[selectedCategory];
-currentQuestion = 0;
-score = 0;
-    alert("✝️ Bible selected!");
+
+    currentQuestion = 0;
+    score = 0;
+
+    bibleBtn.classList.add("selected");
+    historyBtn.classList.remove("selected");
 
 });
 playBtn.addEventListener("click", function () {
