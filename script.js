@@ -60,6 +60,7 @@ nextQuestion();
 
         } else {
             button.textContent = "❌ " + button.textContent;
+            button.classList.add("wrong");
             alert("Wrong answer!");
 
 nextQuestion();
