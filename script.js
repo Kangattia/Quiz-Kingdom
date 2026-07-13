@@ -116,7 +116,7 @@ shuffleQuestions();
 });
 playBtn.addEventListener("click", function () {
     playerName = playerNameInput.value.trim();
-
+alert(playerName);
 if (playerName === "") {
 
     alert("👑 Enter your kingdom name to continue!");
