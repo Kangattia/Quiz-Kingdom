@@ -52,11 +52,30 @@ answerButtons.forEach((button, index) => {
 
     alert("Correct! 👑");
 
+nextQuestion();
+
         } else {
             button.textContent = "❌ " + button.textContent;
             alert("Wrong answer!");
+
+nextQuestion();
         }
 
     });
 
 });
+function nextQuestion() {
+
+    currentQuestion++;
+
+    if (currentQuestion < questions.length) {
+
+        showQuestion();
+
+    } else {
+
+        alert("Quiz completed! 👑 Your score is " + score);
+
+    }
+
+}
