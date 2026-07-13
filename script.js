@@ -11,12 +11,26 @@ const answerButtons = document.querySelectorAll(".answerBtn");
 
 let currentQuestion = 0;
 let score = 0;
+let selectedCategory = "History";
 
 const scoreText = document.getElementById("scoreText");
 const questionCounter = document.getElementById("questionCounter");
 const resultScreen = document.getElementById("resultScreen");
 const finalScore = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
+historyBtn.addEventListener("click", function () {
+
+    selectedCategory = "History";
+    alert("🌍 History selected!");
+
+});
+
+bibleBtn.addEventListener("click", function () {
+
+    selectedCategory = "Bible";
+    alert("✝️ Bible selected!");
+
+});
 playBtn.addEventListener("click", function () {
 clickSound.play();
     backgroundMusic.play();
