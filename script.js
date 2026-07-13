@@ -1,4 +1,5 @@
 const selectedText = document.getElementById("selectedText");
+const playerNameInput = document.getElementById("playerNameInput");
 const playBtn = document.getElementById("playBtn");
 const backBtn = document.getElementById("backBtn");
 const historyBtn = document.getElementById("historyBtn");
@@ -92,6 +93,15 @@ shuffleQuestions();
 
 });
 playBtn.addEventListener("click", function () {
+    playerName = playerNameInput.value.trim();
+
+if (playerName === "") {
+
+    alert("👑 Enter your kingdom name to continue!");
+
+    return;
+
+}
 clickSound.play();
     backgroundMusic.play();
     homeScreen.style.display = "none";
