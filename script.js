@@ -124,6 +124,11 @@ if (playerName === "") {
     return;
 
 }
+    playerProfile.username = playerName;
+
+playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
+
+updatePlayerCard();
 clickSound.play();
     backgroundMusic.play();
     homeScreen.style.display = "none";
