@@ -8,7 +8,9 @@ const categoryTitle = document.getElementById("categoryTitle");
 const answerButtons = document.querySelectorAll(".answerBtn");
 
 let currentQuestion = 0;
+let score = 0;
 
+const scoreText = document.getElementById("scoreText");
 
 playBtn.addEventListener("click", function () {
 
