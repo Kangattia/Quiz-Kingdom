@@ -12,7 +12,7 @@ const answerButtons = document.querySelectorAll(".answerBtn");
 let currentQuestion = 0;
 let score = 0;
 let selectedCategory = "History";
-
+let questions = questionBank[selectedCategory];
 const scoreText = document.getElementById("scoreText");
 const questionCounter = document.getElementById("questionCounter");
 const resultScreen = document.getElementById("resultScreen");
@@ -21,9 +21,13 @@ const restartBtn = document.getElementById("restartBtn");
 historyBtn.addEventListener("click", function () {
 
     selectedCategory = "History";
+    questions = questionBank[selectedCategory];
+
     alert("🌍 History selected!");
 
 });
+
+
 
 bibleBtn.addEventListener("click", function () {
 
