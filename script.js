@@ -65,7 +65,6 @@ button.classList.add("correct");
     nextQuestion();
 }, 800);
 
-nextQuestion();
         }
 
     });
