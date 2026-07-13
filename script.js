@@ -201,6 +201,17 @@ function getRoyalTitle(points) {
     else {
         return "🌱 Kingdom Recruit";
     }
+}
+function updatePlayerCard() {
+
+    playerTitle.textContent = 
+    "👑 Title: " + playerProfile.title;
+
+    playerPoints.textContent = 
+    "🏆 Total Points: " + playerProfile.totalPoints;
+
+    playerLevels.textContent = 
+    "📚 Levels Completed: " + playerProfile.levelsCompleted;
 
 }
 function startTimer() {
