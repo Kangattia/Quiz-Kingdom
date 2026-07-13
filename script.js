@@ -129,8 +129,7 @@ if (playerName === "") {
 playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
-
-
+savePlayerProfile();
 clickSound.play();
 backgroundMusic.play();
 homeScreen.style.display = "none";
@@ -219,6 +218,14 @@ function updatePlayerCard() {
 
     playerLevels.textContent = 
     "📚 Levels Completed: " + playerProfile.levelsCompleted;
+
+}
+function savePlayerProfile() {
+
+    localStorage.setItem(
+        "quizKingdomProfile",
+        JSON.stringify(playerProfile)
+    );
 
 }
 function startTimer() {
