@@ -146,6 +146,7 @@ function showQuestion() {
 
     let question = questions[currentQuestion];
 shuffleAnswers(question);
+    startTimer();
     categoryTitle.textContent = question.category;
 
     questionText.textContent = question.question;
