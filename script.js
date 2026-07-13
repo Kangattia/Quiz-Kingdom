@@ -26,7 +26,7 @@ historyBtn.addEventListener("click", function () {
 
     selectedCategory = "History";
     questions = questionBank[selectedCategory];
-
+shuffleQuestions();
     currentQuestion = 0;
     score = 0;
 selectedText.textContent = "Selected: 🌍 History";
@@ -101,7 +101,11 @@ backBtn.addEventListener("click", function () {
     score = 0;
 
 });
+function shuffleQuestions() {
 
+    questions.sort(() => Math.random() - 0.5);
+
+}
 function showQuestion() {
 
     let question = questions[currentQuestion];
