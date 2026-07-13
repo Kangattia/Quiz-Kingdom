@@ -16,7 +16,7 @@ const resultScreen = document.getElementById("resultScreen");
 const finalScore = document.getElementById("finalScore");
 const restartBtn = document.getElementById("restartBtn");
 playBtn.addEventListener("click", function () {
-
+clickSound.play();
     homeScreen.style.display = "none";
     quizScreen.style.display = "block";
 
@@ -43,7 +43,7 @@ questionCounter.textContent =
 answerButtons.forEach((button, index) => {
 
     button.addEventListener("click", function () {
-
+clickSound.play();
         let question = questions[currentQuestion];
 
         if (index === question.correct) {
