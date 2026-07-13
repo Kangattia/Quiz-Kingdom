@@ -212,3 +212,13 @@ button:disabled {
     margin: 20px 0;
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
+#timerText {
+    background: #ffe082;
+    color: #8a6500;
+    border: 2px solid gold;
+    border-radius: 10px;
+    padding: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px 0;
+}
