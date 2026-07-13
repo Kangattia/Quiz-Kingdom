@@ -32,6 +32,8 @@ historyBtn.addEventListener("click", function () {
 bibleBtn.addEventListener("click", function () {
 
     selectedCategory = "Bible";
+    questions = questionBank[selectedCategory];
+
     alert("✝️ Bible selected!");
 
 });
