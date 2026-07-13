@@ -15,3 +15,8 @@ const backgroundMusic = new Audio(
 
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.3;
+const victorySound = new Audio(
+"https://actions.google.com/sounds/v1/cartoon/concussive_drum_hit.ogg"
+);
+
+victorySound.volume = 0.5;
