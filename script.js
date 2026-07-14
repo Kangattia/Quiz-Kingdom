@@ -54,6 +54,7 @@ let streakBonusEarned = false;
 let firstAttemptPerfect = true;
 let selectedCategory = "History";
 let questions = questionBank[selectedCategory];
+let currentLevelID = selectedCategory + "_Level_1";
 const scoreText = document.getElementById("scoreText");
 const questionCounter = document.getElementById("questionCounter");
 const timerText = document.getElementById("timerText");
