@@ -163,6 +163,12 @@ backBtn.addEventListener("click", function () {
     score = 0;
 
 });
+backRankingBtn.addEventListener("click", function () {
+
+    rankingScreen.style.display = "none";
+    homeScreen.style.display = "block";
+
+});
 function shuffleQuestions() {
 
     questions.sort(() => Math.random() - 0.5);
