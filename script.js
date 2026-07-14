@@ -391,7 +391,7 @@ clickSound.play();
     score++;
 
     scoreText.textContent = "Score: " + score;
-            let questionID = currentLevelID + "_" + currentQuestion;
+            let questionID = question.id;
 
 if (!playerProfile.answeredQuestions.includes(questionID)) {
 
