@@ -344,7 +344,11 @@ function nextQuestion() {
         playerProfile.levelsCompleted += 1;
 
 playerProfile.totalPoints += 10;
+if (firstAttemptPerfect) {
 
+    playerProfile.totalPoints += 100;
+
+}
 playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
