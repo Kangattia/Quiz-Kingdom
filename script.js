@@ -364,7 +364,11 @@ function startTimer() {
 }
 
 function showQuestion() {
+answerButtons.forEach(button => {
 
+    button.disabled = false;
+
+});
     let question = questions[currentQuestion];
 shuffleAnswers(question);
     startTimer();
@@ -387,7 +391,11 @@ clickSound.play();
         let question = questions[currentQuestion];
 
         if (index === question.correct) {
+answerButtons.forEach(button => {
 
+    button.disabled = true;
+
+});
     score++;
 
     scoreText.textContent = "Score: " + score;
