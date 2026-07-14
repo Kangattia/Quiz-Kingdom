@@ -42,6 +42,7 @@ let playerProfile = {
     lastPlayed: ""
 
 };
+let kingdomPlayers = [];
 let questionPointsEarned = 0;
 let levelBonusEarned = false;
 let streakBonusEarned = false;
