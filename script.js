@@ -254,7 +254,7 @@ function showPointsPopup(points) {
 
         popup.style.display = "none";
 
-    }, 1000);
+    }, 2000);
 
 }
 function savePlayerProfile() {
@@ -460,8 +460,12 @@ function nextQuestion() {
 
         victorySound.play();
 
-        quizScreen.style.display = "none";
-        resultScreen.style.display = "block";
+setTimeout(() => {
+
+    quizScreen.style.display = "none";
+    resultScreen.style.display = "block";
+
+}, 1500);
 
         finalScore.textContent =
         "Your Score: " + score + "/" + questions.length;
