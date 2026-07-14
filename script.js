@@ -34,6 +34,7 @@ let playerProfile = {
     title: "🌱 Kingdom Recruit",
 
     levelsCompleted: 0,
+    completedLevels: [],
 
     perfectLevels: 0,
 
