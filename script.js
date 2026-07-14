@@ -45,6 +45,7 @@ let playerProfile = {
 let questionPointsEarned = 0;
 let levelBonusEarned = false;
 let streakBonusEarned = false;
+let firstAttemptPerfect = true;
 let selectedCategory = "History";
 let questions = questionBank[selectedCategory];
 const scoreText = document.getElementById("scoreText");
