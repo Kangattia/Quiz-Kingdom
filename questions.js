@@ -3,7 +3,6 @@ const questionBank = {
 History: [
 
 {
-{
 id: "H0001",
 category: "History",
 question: "Who was the first President of Cameroon?",
