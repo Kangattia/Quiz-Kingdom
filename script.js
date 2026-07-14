@@ -457,6 +457,9 @@ function nextQuestion() {
             savePlayerProfile();
 
             saveToLeaderboard();
+            playerProfile.completedLevels.push(currentLevelID);
+
+savePlayerProfile();
 
         }
 
