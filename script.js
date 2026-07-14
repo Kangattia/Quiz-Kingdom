@@ -436,7 +436,7 @@ function nextQuestion() {
 
     } else {
 
-        if (score === questions.length) {
+        if (score === questions.length && !playerProfile.completedLevels.includes(currentLevelID)) {
 
             playerProfile.levelsCompleted += 1;
 
