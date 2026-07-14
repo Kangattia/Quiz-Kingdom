@@ -35,6 +35,7 @@ let playerProfile = {
 
     levelsCompleted: 0,
     completedLevels: [],
+    answeredQuestions: [],
 
     perfectLevels: 0,
 
