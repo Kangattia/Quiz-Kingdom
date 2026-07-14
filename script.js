@@ -454,12 +454,11 @@ function nextQuestion() {
 
             updatePlayerCard();
 
-            savePlayerProfile();
-
-            saveToLeaderboard();
             playerProfile.completedLevels.push(currentLevelID);
 
 savePlayerProfile();
+
+saveToLeaderboard();
 
         }
 
