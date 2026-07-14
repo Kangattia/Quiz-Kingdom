@@ -250,6 +250,10 @@ function showPointsPopup(points) {
 
     const popup = document.getElementById("pointsPopup");
 
+    if (!popup) {
+        return;
+    }
+
     popup.textContent = "✨ +" + points + " Points!";
 
     popup.style.display = "block";
