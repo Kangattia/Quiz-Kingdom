@@ -442,7 +442,9 @@ function nextQuestion() {
 
             if (firstAttemptPerfect) {
 
-                playerProfile.totalPoints += 100;
+    playerProfile.totalPoints += 100;
+
+    showPointsPopup(100);
 
             }
 
