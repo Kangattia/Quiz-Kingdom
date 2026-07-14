@@ -131,6 +131,7 @@ playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
 savePlayerProfile();
+    firstAttemptPerfect = true;
 clickSound.play();
 backgroundMusic.play();
 homeScreen.style.display = "none";
@@ -145,6 +146,7 @@ backBtn.addEventListener("click", function () {
     homeScreen.style.display = "block";
 
     currentQuestion = 0;
+
     score = 0;
 
 });
@@ -384,6 +386,7 @@ if (score === questions.length) {
 restartBtn.addEventListener("click", function () {
 
     currentQuestion = 0;
+    firstAttemptPerfect = true;
     score = 0;
 
     scoreText.textContent = "Score: 0";
