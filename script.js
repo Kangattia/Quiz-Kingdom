@@ -391,11 +391,21 @@ clickSound.play();
     score++;
 
     scoreText.textContent = "Score: " + score;
-            playerProfile.totalPoints += 10;
-            showPointsPopup(10);
-if (timeLeft > 10) {
+            let questionID = currentLevelID + "_" + currentQuestion;
 
-    playerProfile.totalPoints += 5;
+if (!playerProfile.answeredQuestions.includes(questionID)) {
+
+    playerProfile.totalPoints += 10;
+
+    showPointsPopup(10);
+
+    if (timeLeft > 10) {
+
+        playerProfile.totalPoints += 5;
+
+    }
+
+    playerProfile.answeredQuestions.push(questionID);
 
 }
 playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
