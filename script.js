@@ -296,14 +296,14 @@ clickSound.play();
     score++;
 
     scoreText.textContent = "Score: " + score;
-            totalPoints += 10;
+            playerProfile.totalPoints += 10;
 
-if (timeLeft > 10) {
+playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
-    totalPoints += 5;
+updatePlayerCard();
 
-}
-
+savePlayerProfile();
+    
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
             correctSound.play();
