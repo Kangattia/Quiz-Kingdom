@@ -416,8 +416,12 @@ savePlayerProfile();
     saveToLeaderboard();
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
-            correctSound.play();
-navigator.vibrate(100);
+            correctSound.play().catch(() => {});
+if (navigator.vibrate) {
+
+    navigator.vibrate(100);
+
+}
     setTimeout(() => {
     nextQuestion();
 }, 800);
