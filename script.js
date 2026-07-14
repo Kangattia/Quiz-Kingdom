@@ -416,7 +416,7 @@ if (!playerProfile.answeredQuestions.includes(questionID)) {
 
     playerProfile.totalPoints += 10;
 
-    //showPointsPopup(10);
+    showPointsPopup(10);
 
     if (timeLeft > 10) {
 
@@ -427,12 +427,12 @@ if (!playerProfile.answeredQuestions.includes(questionID)) {
     playerProfile.answeredQuestions.push(questionID);
 
 }
-//playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
+playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
-//updatePlayerCard();
+updatePlayerCard();
 
-//savePlayerProfile();
-    //saveToLeaderboard();
+savePlayerProfile();
+    saveToLeaderboard();
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
             correctSound.play().catch(() => {});
