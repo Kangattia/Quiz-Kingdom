@@ -318,6 +318,7 @@ navigator.vibrate(100);
 }, 800);
 
         } else {
+            firstAttemptPerfect = false;
             button.textContent = "❌ " + button.textContent;
             button.classList.add("wrong");
             wrongSound.play();
