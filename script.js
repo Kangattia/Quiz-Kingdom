@@ -232,6 +232,29 @@ function savePlayerProfile() {
     );
 
 }
+function saveToLeaderboard() {
+
+    let existingPlayer = kingdomPlayers.find(
+        player => player.username === playerProfile.username
+    );
+
+    if (existingPlayer) {
+
+        existingPlayer.totalPoints = playerProfile.totalPoints;
+        existingPlayer.title = playerProfile.title;
+
+    } else {
+
+        kingdomPlayers.push(playerProfile);
+
+    }
+
+    localStorage.setItem(
+        "quizKingdomPlayers",
+        JSON.stringify(kingdomPlayers)
+    );
+
+}
 function loadPlayerProfile() {
 
     let savedProfile = localStorage.getItem("quizKingdomProfile");
