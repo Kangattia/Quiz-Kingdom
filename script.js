@@ -427,7 +427,7 @@ if (!playerProfile.answeredQuestions.includes(questionID)) {
     playerProfile.answeredQuestions.push(questionID);
 
 }
-playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
+//playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 //updatePlayerCard();
 
