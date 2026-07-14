@@ -297,7 +297,11 @@ clickSound.play();
 
     scoreText.textContent = "Score: " + score;
             playerProfile.totalPoints += 10;
+if (timeLeft > 10) {
 
+    playerProfile.totalPoints += 5;
+
+}
 playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
 updatePlayerCard();
