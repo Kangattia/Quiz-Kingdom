@@ -145,6 +145,14 @@ quizScreen.style.display = "block";
     showQuestion();
 
 });
+rankingBtn.addEventListener("click", function () {
+
+    homeScreen.style.display = "none";
+    rankingScreen.style.display = "block";
+
+    showLeaderboard();
+
+});
 backBtn.addEventListener("click", function () {
 
     quizScreen.style.display = "none";
