@@ -417,44 +417,61 @@ function nextQuestion() {
         showQuestion();
 
     } else {
-        playerProfile.levelsCompleted += 1;
 
-playerProfile.totalPoints += 10;
-if (firstAttemptPerfect) {
+        if (score === questions.length) {
 
-    playerProfile.totalPoints += 100;
+            playerProfile.levelsCompleted += 1;
 
-}
-playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
+            playerProfile.totalPoints += 10;
 
-updatePlayerCard();
+            if (firstAttemptPerfect) {
 
-savePlayerProfile();
-saveToLeaderboard();
-victorySound.play();
-    quizScreen.style.display = "none";
-    resultScreen.style.display = "block";
+                playerProfile.totalPoints += 100;
 
-    finalScore.textContent = "Your Score: " + score + "/" + questions.length;
-const resultMessage = document.getElementById("resultMessage");
+            }
 
-if (score === questions.length) {
+            playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 
-    resultMessage.textContent = "👑 Legendary! You are a true Knowledge King!";
+            updatePlayerCard();
 
-} else if (score >= 7) {
+            savePlayerProfile();
 
-    resultMessage.textContent = "🌟 Excellent! Your kingdom celebrates your wisdom!";
+            saveToLeaderboard();
 
-} else if (score >= 5) {
+        }
 
-    resultMessage.textContent = "👍 Good effort! Keep improving!";
+        victorySound.play();
 
-} else {
+        quizScreen.style.display = "none";
+        resultScreen.style.display = "block";
 
-    resultMessage.textContent = "📚 Keep learning. Great minds grow every day!";
+        finalScore.textContent =
+        "Your Score: " + score + "/" + questions.length;
 
-}
+        const resultMessage = document.getElementById("resultMessage");
+
+        if (score === questions.length) {
+
+            resultMessage.textContent =
+            "👑 Legendary! You are a true Knowledge King!";
+
+        } else if (score >= 7) {
+
+            resultMessage.textContent =
+            "🌟 Excellent! Your kingdom celebrates your wisdom!";
+
+        } else if (score >= 5) {
+
+            resultMessage.textContent =
+            "👍 Good effort! Keep improving!";
+
+        } else {
+
+            resultMessage.textContent =
+            "📚 Keep learning. Great minds grow every day!";
+
+        }
+
     }
 
 }
