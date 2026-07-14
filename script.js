@@ -242,6 +242,21 @@ function updatePlayerCard() {
     "📚 Levels Completed: " + playerProfile.levelsCompleted;
 
 }
+function showPointsPopup(points) {
+
+    const popup = document.getElementById("pointsPopup");
+
+    popup.textContent = "✨ +" + points + " Points!";
+
+    popup.style.display = "block";
+
+    setTimeout(() => {
+
+        popup.style.display = "none";
+
+    }, 1000);
+
+}
 function savePlayerProfile() {
 
     localStorage.setItem(
