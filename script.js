@@ -25,6 +25,7 @@ let currentQuestion = 0;
 let score = 0;
 let timeLeft = 15;
 let timer;
+let questionAnswered = false;
 let playerProfile = {
 
     username: "",
@@ -355,7 +356,13 @@ function startTimer() {
 
             clearInterval(timer);
 
-            nextQuestion();
+            if (!questionAnswered) {
+
+    questionAnswered = true;
+
+    nextQuestion();
+
+            }
 
         }
 
@@ -369,6 +376,7 @@ answerButtons.forEach(button => {
     button.disabled = false;
 
 });
+    questionAnswered = false;
     let question = questions[currentQuestion];
 shuffleAnswers(question);
     startTimer();
@@ -386,6 +394,9 @@ questionCounter.textContent =
 answerButtons.forEach((button, index) => {
 
     button.addEventListener("click", function () {
+        if (questionAnswered) return;
+
+questionAnswered = true;
         clearInterval(timer);
 clickSound.play();
         let question = questions[currentQuestion];
