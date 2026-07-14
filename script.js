@@ -233,7 +233,7 @@ function getRoyalTitle(points) {
 function updatePlayerCard() {
 
     playerTitle.textContent = 
-    "👑 Title: " + playerProfile.title;
+"⚔️ Rank: " + playerProfile.title;
 
     playerPoints.textContent = 
     "🏆 Total Points: " + playerProfile.totalPoints;
