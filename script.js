@@ -259,6 +259,32 @@ function saveToLeaderboard() {
     );
 
 }
+function showLeaderboard() {
+
+    rankingList.innerHTML = "";
+
+    kingdomPlayers.sort((a, b) => 
+        b.totalPoints - a.totalPoints
+    );
+
+    kingdomPlayers.forEach((player, index) => {
+
+        let rank = index + 1;
+
+        rankingList.innerHTML +=
+        "<p>" +
+        rank + ". 👑 " +
+        player.username +
+        " - " +
+        player.title +
+        " - " +
+        player.totalPoints +
+        " pts" +
+        "</p>";
+
+    });
+
+}
 function loadPlayerProfile() {
 
     let savedProfile = localStorage.getItem("quizKingdomProfile");
