@@ -267,3 +267,34 @@ button:disabled {
     color: #2e7d32;
 
 }
+#pointsPopup {
+
+    position: fixed;
+
+    top: 40%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: linear-gradient(to bottom, #fff8dc, #ffffff);
+
+    border: 3px solid gold;
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #8a6500;
+
+    box-shadow: 0 0 25px gold;
+
+    display: none;
+
+    z-index: 999;
+
+}
