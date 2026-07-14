@@ -386,6 +386,7 @@ playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 updatePlayerCard();
 
 savePlayerProfile();
+saveToLeaderboard();
 victorySound.play();
     quizScreen.style.display = "none";
     resultScreen.style.display = "block";
