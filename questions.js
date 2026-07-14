@@ -105,7 +105,8 @@ answers: [
 ],
 correct: 1
 },
-  {
+
+{
 id: "H0009",
 category: "History",
 question: "In which year did World War II end?",
@@ -212,7 +213,7 @@ answers: [
 ],
 correct: 1
 },
-{
+  {
 id: "B0007",
 category: "Bible",
 question: "Who betrayed Jesus?",
@@ -336,8 +337,7 @@ correct: 1
 ],
 
 Geography: [
-
-{
+  {
 id: "G0001",
 category: "Geography",
 question: "What is the largest continent in the world?",
@@ -401,5 +401,7 @@ answers: [
 ],
 correct: 2
 }
+
+]
 
 };
