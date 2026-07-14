@@ -245,7 +245,13 @@ function loadPlayerProfile() {
         updatePlayerCard();
 
     }
+let savedPlayers = localStorage.getItem("quizKingdomPlayers");
 
+if (savedPlayers) {
+
+    kingdomPlayers = JSON.parse(savedPlayers);
+
+}
 }
 function startTimer() {
 
