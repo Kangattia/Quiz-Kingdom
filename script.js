@@ -339,6 +339,15 @@ function nextQuestion() {
         showQuestion();
 
     } else {
+        playerProfile.levelsCompleted += 1;
+
+playerProfile.totalPoints += 10;
+
+playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
+
+updatePlayerCard();
+
+savePlayerProfile();
 victorySound.play();
     quizScreen.style.display = "none";
     resultScreen.style.display = "block";
