@@ -340,7 +340,7 @@ playerProfile.title = getRoyalTitle(playerProfile.totalPoints);
 updatePlayerCard();
 
 savePlayerProfile();
-    
+    saveToLeaderboard();
     button.textContent = "✅ " + button.textContent;
 button.classList.add("correct");
             correctSound.play();
